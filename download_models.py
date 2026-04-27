@@ -11,8 +11,8 @@ from pathlib import Path
 # URLs de Hugging Face (reemplaza con tu usuario real)
 HF_USER = os.getenv("HF_USER", "tuusuario")
 MODELS = {
-    "models/s2/best_model.pth": f"https://huggingface.co/{HF_USER}/sistema-arroz-modelos/resolve/main/best_model.pth",
-    "models/s3/best.pt": f"https://huggingface.co/{HF_USER}/sistema-arroz-modelos/resolve/main/best.pt",
+    "models/s2/best_model.pth": f"https://huggingface.co/Camilo1408/sistema-arroz-modelos/resolve/main/best_model.pth",
+    "models/s3/best.pt": f"https://huggingface.co/Camilo1408/sistema-arroz-modelos/resolve/main/best.pt",
 }
 
 def download_models():
