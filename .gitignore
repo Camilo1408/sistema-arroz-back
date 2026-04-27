@@ -1,0 +1,21 @@
+# Entorno virtual
+venv/
+
+# Variables de entorno (contienen rutas y configuración sensible)
+.env
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos temporales de VS Code
+.vscode/
+
+# Modelos entrenados (son grandes, se suben por separado)
+models/s2/*.pth
+models/s3/*.pt
+models/s1/*.pt
+
+# Exportaciones temporales
+exports/
