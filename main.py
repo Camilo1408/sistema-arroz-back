@@ -17,6 +17,8 @@ from app.inference.model_loader import load_all_models
 from app.api.routes import router
 # En main.py — modifica solo el bloque @asynccontextmanager
 from app.core.database import create_tables
+# En main.py, agrega al inicio del lifespan:
+from download_models import download_models
 
 # ── Configuración del sistema de logging ─────────────────────────
 logging.basicConfig(
@@ -41,6 +43,8 @@ async def lifespan(app: FastAPI):
     Cargado una vez al inicio, cada inferencia tarda 20-200ms.
     """
     logger.info("🚀 Iniciando servidor de diagnóstico de arroz...")
+
+    download_models()
 
     # NUEVO: Crear tablas de base de datos
     await create_tables()
