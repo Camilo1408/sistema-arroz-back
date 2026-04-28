@@ -1,0 +1,11 @@
+venv
+.venv
+.git
+.gitignore
+__pycache__
+*.pyc
+.DS_Store
+.env
+diagnostico_arroz.db
+models/s2/*.pth
+models/s3/*.pt
